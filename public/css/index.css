@@ -3,7 +3,138 @@
     padding: 0;
 }
 
-.logo {
-    width: 320px;
-    height: 320px;
+header {
+    background-color: yellow;
 }
+
+.logo-input {
+    display: flex;
+    margin-inline: 2px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    display: inline;
+    margin-left: 1em;
+    margin-top: 1em;
+
+}
+
+.buscador{
+display: inline;
+margin-left: 1em;
+margin-top: 1em;
+}
+
+input {
+    width: 140px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.icono-text{
+display: flex;
+margin-top: -5em;
+margin-left: 3em;
+}
+
+.mano-imagen {
+    width: 15px;
+    height: 15px;
+    display: inline;
+}
+
+.compra-icono{
+    display: inline;
+    font-size: 16px;
+    
+}
+
+.menu-hamburgesa{
+    display:flex;
+    margin-bottom: 1em;
+}
+
+.img-hamburguesa{
+    margin-top: 1em;
+    width: 50px;
+    height: 50px;
+margin-left: 10em;
+}
+
+.input-icono{
+    left: 50%;
+}
+
+.respmenu a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #456789;
+    max-width: 200px;
+    background: gray;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black;
+  }
+
+  .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    background-color: blueviolet;
+  }
+  
+  .respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+  }
+  
+  .respmenu input[type="checkbox"] {
+    opacity: 0;
+    color: aqua;
+  }
+  
+  .respmenu {
+    color: white;
+    position: relative;
+    background: yellow;
+    min-height: 48px;
+  }
+  
+  .respmenu nav {
+    display: none;
+  }
+  
+  .respmenu input:checked ~ nav {
+    display: block;
+  }
+  
+  .respmenu input:checked ~ .fa-bars {
+    display: none;
+  }
+  
+  .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+   
+
+  .banner-home{
+    width: 100%;
+    height: 150px;
+  }
+
+  .cafetera-imagen{
+    width: 100%;
+    height: 200px;
+  }
+
+  footer{
+    background: yellow;
+  }
