@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 320px;
+    height: 320px;
+}
