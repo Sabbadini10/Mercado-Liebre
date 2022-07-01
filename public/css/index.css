@@ -1,82 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-:root{
-  --amarillo: #EAC926;
---azul: #03264C;
---celeste: #1259c3;
---grisOscuro: #666;
---grisClaro: #ebebeb;
---verde: #39b54a;
---fuente: "Roboto";
---cuerposTexto: 12px;
---titulares: 24px;
---precios: 18px;
---descuentos: 16px;
---descripciones: 16px;
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --grisOscuro: #666;
+  --grisClaro: #ebebeb;
+  --verde: #39b54a;
+  --fuente: "Roboto";
+  --cuerposTexto: 12px;
+  --titulares: 24px;
+  --precios: 18px;
+  --descuentos: 16px;
+  --descripciones: 16px;
 }
 
-body{
-font-family: var(--fuente);
+body {
+  font-family: var(--fuente);
 }
 
 .home_header {
-    background-color: var(--amarillo);
-    width: 100%;
-    height: 400px;
+  background-color: var(--amarillo);
+  width: 100%;
+  height: 400px;
 }
 
 .home_header_logo_input {
-    display: block;
-    margin-left: 5px;
+  display: block;
+  margin-left: 5px;
 }
 
 .home_header_logo {
-    display: inline-block;
-    margin-top: -2em;
-
+  display: inline-block;
+  margin-top: -2em;
 }
 
-.home_header_logo img{
+.home_header_logo img {
   width: 50%;
   height: 200px;
   margin-left: 2em;
-margin-bottom: -3em;
+  margin-bottom: -3em;
 }
 
-.home_header_buscador{
-display: inline-block;
-margin-left: 1em;
-margin-top: -3em;
+.home_header_buscador {
+  display: inline-block;
+  margin-left: 1em;
+  margin-top: -3em;
 }
 
 .home_header_buscador_input {
-    width: 300px;
-    height: 30px;
-    border-radius: 5px;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
 }
 
-.home_header_icono_text{
-display: flex;
-padding: 5px;
-margin-left: 2em;
-margin-top: 1em;
+.home_header_icono_text {
+  display: flex;
+  padding: 5px;
+  margin-left: 2em;
+  margin-top: 1em;
 }
 
-
-.home_header_icono_text .home_header_icono_mano{
+.home_header_icono_text .home_header_icono_mano {
   display: flex;
   padding: 5px;
 }
 
-.home_header_lista{
+.home_header_lista {
   margin-left: 1em;
-  
 }
 
 .home_header_lista li {
@@ -88,25 +85,25 @@ margin-top: 1em;
   color: #000;
 }
 
-.home_header_lista{
-display: flex;
-align-items: center;
-margin-left: 15%;
-margin-top: 1em;
+.home_header_lista {
+  display: flex;
+  align-items: center;
+  margin-left: 15%;
+  margin-top: 1em;
 }
 
-.home_header_lista_ul1{
+.home_header_lista_ul1 {
   display: inline;
   margin-right: 1em;
 }
 
-.home_header_lista_ul2{
+.home_header_lista_ul2 {
   display: inline;
   margin-left: 1em;
   margin-top: -1em;
 }
 
-.home_header_icono_hamburguesa{
+.home_header_icono_hamburguesa {
   text-align: center;
   margin-top: 2em;
   background-color: var(--celeste);
@@ -120,53 +117,50 @@ margin-top: 1em;
   color: var(--grisClaro);
 }
 
+.banner-home {
+  width: 100%;
+  height: 150px;
+}
 
-  .banner-home{
-    width: 100%;
-    height: 150px;
-  }
+.home_main_imagen {
+  width: 100%;
+  height: 200px;
+}
 
-  .home_main_imagen{
-    width: 100%;
-    height: 200px;
-  }
+h3 {
+  font-size: var(--titulares);
+}
 
-  h3 {
-    font-size: var(--titulares);
-  }
+.home_main_precio {
+  font-size: var(--precios);
+}
 
-  .home_main_precio{
-font-size: var(--precios);
-  }
+.home_main_oferta {
+  font-size: var(--descuentos);
+}
 
-  .home_main_oferta{
-    font-size: var(--descuentos);
-  }
+.home_footer {
+  background: yellow;
+  text-align: center;
+  padding: 5px;
+  margin-top: 2em;
+}
 
-  .home_footer{
-    background: yellow;
-    text-align: center;
-    padding: 5px;
-    margin-top: 2em;
-  }
+.home_footer span {
+  font-size: 2em;
+  color: var(--celeste);
+  margin-bottom: 10px;
+}
 
-  .home_footer span{
-    font-size: 2em; 
-    color: var(--celeste);
-    margin-bottom: 10px;
-  }
+.home_footer h3 {
+  color: var(--grisOscuro);
+}
 
-  .home_footer h3{
-    color: var(--grisOscuro);
-  }
+.home_footer p {
+  color: var(--grisOscuro);
+}
 
-  .home_footer p{
-    color: var(--grisOscuro);
-  }
-
-  .home_footer_section{
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-
+.home_footer_section {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
