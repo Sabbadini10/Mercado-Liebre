@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import "./adaptativo.css";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,58 +26,68 @@ body {
 }
 
 .home_header {
-  background-color: var(--amarillo);
   width: 100%;
-  height: 400px;
+  background-color: var(--amarillo);
 }
 
-.home_header_logo_input {
-  display: block;
-  margin-left: 5px;
+.home_header_logo{
+  display: flex;
+  justify-content: center;
 }
 
-.home_header_logo {
-  display: inline-block;
-  margin-top: -2em;
-}
 
 .home_header_logo img {
-  width: 50%;
-  height: 200px;
-  margin-left: 2em;
-  margin-bottom: -3em;
+  width: 150px;
+  height: 150px;
+  align-items: center;
 }
 
 .home_header_buscador {
-  display: inline-block;
-  margin-left: 1em;
-  margin-top: -3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home_header_buscador_input {
-  width: 300px;
+  width: 220px;
   height: 30px;
   border-radius: 5px;
+  align-items: center;
+  margin-left: 2px;
 }
 
 .home_header_icono_text {
-  display: flex;
-  padding: 5px;
-  margin-left: 2em;
   margin-top: 1em;
+  display: flex;
+  justify-content: center;
 }
 
-.home_header_icono_text .home_header_icono_mano {
+.home_header_icono_mano {
+  font-size: 12px;
   display: flex;
-  padding: 5px;
+  flex-direction: row;
 }
 
 .home_header_lista {
-  margin-left: 1em;
+  display: none;
+  height: auto;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+
+.home_header_lista_ul1{
+  flex-wrap: wrap;
+  margin-right: 1rem;
+}
+
+.home_header_lista_ul2{
+  flex-wrap: wrap;
 }
 
 .home_header_lista li {
   list-style: none;
+  margin-top: 1px;
 }
 
 .home_header_lista a {
@@ -85,50 +95,93 @@ body {
   color: #000;
 }
 
-.home_header_lista {
-  display: flex;
-  align-items: center;
-  margin-left: 15%;
-  margin-top: 1em;
-}
-
-.home_header_lista_ul1 {
-  display: inline;
-  margin-right: 1em;
-}
-
-.home_header_lista_ul2 {
-  display: inline;
-  margin-left: 1em;
-  margin-top: -1em;
-}
 
 .home_header_icono_hamburguesa {
-  text-align: center;
   margin-top: 2em;
-  background-color: var(--celeste);
-  width: 55px;
-  padding: 5px;
-  border-radius: 10px;
-  margin-left: 9em;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
 }
 
-.home_header_icono_hamburguesa i {
-  color: var(--grisClaro);
+
+
+.home_header_icono_hamburguesa_menu span{
+  display: flex;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  background-color: var(--celeste);
+  align-items: center;
+  justify-content: center;
 }
+
+.fa-bars {
+  display: flex;
+  color: var(--grisClaro);
+  font-size: 24px;
+}
+
+
 
 .banner-home {
   width: 100%;
   height: 150px;
 }
 
-.home_main_imagen {
+
+
+
+.home.main {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.home_main_articulo {
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_main_articulo_caja_contenedora {
+border: solid 1px #ebebeb;
+padding: 15px;
+}
+
+.fa-truck-fast {
+  color: var(--verde);
+  border: solid 1px var(--verde);
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 1.5em;
+}
+
+h4 {
+  display: none;
+}
+
+.home_main_articulo_caja_imagen {
+  display: flex;
+  padding: 5px;
+}
+
+.home_main_imagen {
+  width: 90%;
   height: 200px;
 }
 
+
 h3 {
   font-size: var(--titulares);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home_main_precio {
@@ -141,26 +194,35 @@ h3 {
 
 .home_footer {
   background: yellow;
-  text-align: center;
-  padding: 5px;
   margin-top: 2em;
+  width: 100%;
+  padding: 5px;
+  flex-direction: row;
 }
 
 .home_footer span {
-  font-size: 2em;
+  font-size: var(--cuerposTexto);
   color: var(--celeste);
   margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .home_footer h3 {
   color: var(--grisOscuro);
+  justify-content: center;
+  align-items: center;
 }
 
 .home_footer p {
   color: var(--grisOscuro);
+  justify-content: center;
+  align-items: center;
 }
 
 .home_footer_section {
   margin-top: 1em;
   margin-bottom: 1em;
+  justify-content: center;
+  align-items: center;
 }
