@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "./footer.css";
+@import "./header.css";
+@import "./index.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --grisOscuro: #666;
+  --grisClaro: #ebebeb;
+  --verde: #39b54a;
+  --fuente: "Roboto";
+  --cuerposTexto: 12px;
+  --titulares: 24px;
+  --precios: 18px;
+  --descuentos: 16px;
+  --descripciones: 16px;
+}
+
+body {
+  font-family: var(--fuente);
+}
+
+
+h3 {
+    font-size: var(--titulares);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  h4 {
+    display: none;
+  }

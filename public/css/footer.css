@@ -1,0 +1,32 @@
+.home_footer {
+    background: yellow;
+    margin-top: 2em;
+    width: 100%;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home_footer_section_icono {
+    font-size: 2em;
+    color: var(--celeste);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .home_footer h3 {
+    color: var(--grisOscuro);
+  }
+  
+  .home_footer p {
+    color: var(--grisOscuro);
+  }
+  
+  .home_footer_section {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
