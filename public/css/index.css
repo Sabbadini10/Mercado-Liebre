@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import "./adaptativo.css";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,6 +27,7 @@ body {
 .home_header {
   width: 100%;
   background-color: var(--amarillo);
+  margin-bottom: 1em;
 }
 
 .home_header_logo{
@@ -51,6 +51,7 @@ body {
 .home_header_buscador_lupa{
   background-color: #ffffff;
   border-radius: 5px;
+  border: solid 1px black;
   width: 20px;
   height: 30px;
   display: flex;
@@ -147,13 +148,14 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
 }
 
 
 .home_main_articulo {
   margin-top: 10px;
-}
+
+} 
+
 
 .home_main_articulo_caja_contenedora {
 border: solid 1px #ebebeb;
@@ -278,6 +280,11 @@ h3 {
       .home_header_icono_hamburguesa {
         display: none;
       }
+
+      .home_main_imagen_banner{
+        border-bottom: solid 1px #000;
+      }
+
       .banner-home {
         height: 250px;
         
@@ -291,7 +298,14 @@ h3 {
       .home_main_imagen {
         height: 400px;
       }
-
+      .home_main_articulo_caja_imagen {
+        display: flex;
+        justify-content: center;
+      }
+    
+      .home_main_imagen{
+        width: 50%;
+      }  
 
       .home_main_articulo{
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
@@ -316,12 +330,19 @@ h3 {
       }
       
       .home_footer p {
-        font-size: 30px;
+        font-size: 20px;
       }
       
 }
 
 /*ESCRITORIO*/
 @media (min-width:1024px) {
-    
+  
+
+  h3 {
+    font-size: 35px;
+  }
+  .home_footer p {
+    font-size: 20px;
+  }
 }
