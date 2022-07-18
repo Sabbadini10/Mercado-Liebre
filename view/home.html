@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/logo-mercado-liebre.svg" />
     <link rel="stylesheet" href="/css/general.css" type="text/css" />
     <script
       src="https://kit.fontawesome.com/7ad2cc9ddb.js"
@@ -19,14 +20,17 @@
             <img class="home_header_logo_img" src="/images/logo-mercado-liebre.svg" alt="logo" />
           </article>
           <article class="home_header_buscador">
-            <input
-              class="home_header_buscador_input"
+            <div class="home_header_buscador_input--contenedor">
+              <input class="home_header_buscador_input"
               type="text"
               placeholder="Buscar Productos, Marcas"
             />
-            <span class="home_header_buscador_lupa">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
+            </div>
+            <div class="home_header_buscador_lupa--contenedor">
+              <span class="home_header_buscador_lupa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </div>
           </article>
         </section>
         <section class="home_header_icono_text">
@@ -74,15 +78,15 @@
           </span>
         </article>
       </section>
+    </header>
+
+    <main class="home_main">
       <section class="home_main_imagen_banner">
         <img
           class="banner-home"
           src="/images/img-home-banner.jpg"
           alt="banner-home"/>
       </section>
-    </header>
-
-    <main class="home_main">
       <section class="home_main_section_visita">
         <h3>Basado en su ultima visita</h3>
         <article class="home_main_articulo">

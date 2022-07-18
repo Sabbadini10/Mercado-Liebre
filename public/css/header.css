@@ -1,53 +1,60 @@
 .home_header {
-    width: 100%;
     background-color: var(--amarillo);
-    margin-bottom: 1em;
+    padding: 20px;
   }
   
   .home_header_logo_input{
+    width: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
-    height: 100px;
-    width: 100%;
-    gap: 10px;
-    padding: 10px;
+    gap: 10%;
+    padding: 5%;
   }
  
   .home_header_logo {
     width: 50%;
-    height: auto;
+    padding: 0;
   }
 
   .home_header_buscador {
     width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
   }
   
+  .home_header_logo_img {
+    width: 100%;
+  }
+
+  .home_header_buscador_lupa--contenedor {
+    width: 25px;
+    position: absolute;
+    height: 39px;
+    background-color: var(--grisClaro);
+    border: none;
+    border-radius: 5px;
+    right: 0px;
+  }
 
 
   .home_header_buscador_input {
-    position: absolute;
-    width: 145px;
+    border: solid 1px var(--color-grisClaro);
+    display: block;
+    width: 100%;
+    padding: 7px 35px 0px 7px;
     border-radius: 5px;
-    height: 40px;
-    border: none;
+    height: 39px;
+    font-size: 18px;
   }
- 
-  .home_header_buscador_lupa {
-    position: absolute;
-    width: 20px;
-    height: 25px;
-    top: 60px;
-   right: 10px;
-    background-color: var(--grisClaro);
-    border: none;
-  }
-  
+
   .fa-magnifying-glass {
     font-size: 1em;
-    color: black;
+    color: var(--grisOscuro);
+    margin-top: 10px;
   }
   
   
@@ -86,11 +93,10 @@
   
   
   .home_header_icono_hamburguesa {
-    margin-top: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1em;
+    margin-top: 1em;
   }
   
   
