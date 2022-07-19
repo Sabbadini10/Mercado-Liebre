@@ -15,10 +15,23 @@
   gap: 10px
 } 
 
+.home_main_articulo_precio {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
 
 .home_main_articulo_caja_contenedora {
 border: solid 1px #ebebeb;
 padding: 15px;
+}
+
+ .home_main_articulo_caja_contenedora span {
+display: flex;
+position: relative;
 }
 
 .fa-truck-fast {
@@ -27,6 +40,13 @@ padding: 15px;
   padding: 5px;
   border-radius: 50%;
   font-size: 1.5em;
+  display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #FFF;
+    position: absolute;
+    right:20px;
+    top: -35px;
 }
 
 .home_main_articulo_caja_imagen {
@@ -42,10 +62,14 @@ padding: 15px;
 
 .home_main_precio {
   font-size: var(--precios);
+  width: 30%;
+  font-weight: 600;
 }
 
 .home_main_oferta {
   font-size: var(--descuentos);
+  width: 70%;
+  color: var(--verde);
 }
 
 
@@ -54,37 +78,87 @@ padding: 15px;
 /*TABLET*/
 @media (min-width: 768px) {
 
+.home_header_contenedor_log_inp_text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding-left: 14px;
+}
+
+.home_header_logo_input{
+  justify-content: flex-start;
+  padding: 0%;
+  gap: 5%;
+}
+
+
+.home_header_logo {
+  width: 50%
+}
+
+
+.home_header_buscador_input--contenedor{
+  width: 50%;
+}
+
+.home_header_buscador_input{
+  width: 185px;
+  height: 25px;
+  font-size: 12px;
+}
+
+.home_header_buscador_lupa--contenedor {
+  right: 17px;
+  height: 25px;
+  border: solid 1px #000;
+}
+
+.home_header_icono_text{
+  width: 30%;
+}
+
+.home_header_icono_mano  {
+  width: 100%;
+  font-size: 11px;
+  align-self: center;
+}
+
+
+.fa-magnifying-glass {
+  font-size: 1em;
+  margin-top: 3px;
+  margin-left: 4px;
+}
+
+
+
     .home_header_lista {
-        margin: 1em;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         gap: 50px;
+        padding: 10px;
+        margin-top: 1rem;
       }
 
       .home_header_lista_ul1{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        gap: 15px;
+        justify-content: flex-start;
+        gap: 10px;
       }
 
       .home_header_lista_ul2 {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        gap: 15px;
+        justify-content: flex-end;
+        gap: 10px;
 }
 
-
-    
-      .home_header_lista li {
-        font-size: var(--descuentos);
-      }
-      
       .home_header_lista a {
-        text-decoration: none;
-        color: #000;
+        font-size: var(--descuentos);
       }
 
       .home_header_icono_hamburguesa {
@@ -102,20 +176,39 @@ padding: 15px;
 
       .home_main {
         display: flex;
+        width: 100%;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 10px;
+        justify-content: center;
         align-content: center;
       }
       
-        .home_main_section_visita, .home_main_section_oferta {
+        .home_main_section_visita {
           width: 90%;
+          display:flex;
+          flex-direction:row;
+          flex-wrap:wrap;
+          gap: 15px;
         }
 
-      h3 {
-        font-size: 35px;
-        color: var(--grisOscuro);
-      }
+        .home_main_section_oferta {
+          width: 90%;
+          height: 50%;
+          display:flex;
+          flex-direction:row;
+          flex-wrap:wrap;
+          gap: 15px;
+        }
+
+        .home_main_articulo {
+          width: 45%;
+        }
+
+        .home_main_articulo_oferta {
+width: 45%
+        }
+
       
       .home_main_imagen {
         height: 400px;
@@ -148,6 +241,11 @@ padding: 15px;
       }
     
 
+      h3 {
+        font-size: 35px;
+        color: var(--grisOscuro);
+      }
+
       .home_footer h3 {
        font-size: 35px;
       }
@@ -167,6 +265,27 @@ padding: 15px;
 /*ESCRITORIO*/
 @media (min-width:1024px) {
   
+  .home_header_logo {
+    width: 80%;
+    margin-right: 15px;
+
+  }
+  
+
+  
+  .home_header_buscador_lupa--contenedor {
+    right: -30px;
+  }
+  
+  .home_header_icono_text{
+    width: 35%;
+  }
+  
+  .home_header_icono_mano  {
+    font-size: 12px;
+  }
+  
+  
 .home_main {
   display: flex;
   flex-direction: column;
@@ -175,9 +294,34 @@ padding: 15px;
   align-content: center;
 }
 
-  .home_main_section_visita, .home_main_section_oferta {
-    width: 90%;
+
+  .home_main_section_visita {
+    height: 50%;
+    justify-content:center;
+    gap: 15px;
   }
+
+  .home_main_section_oferta {
+    height: 50%;
+    justify-content:center;
+    gap: 15px;
+  }
+
+  .home_main_articulo {
+    width: 23%;
+    height: 50%;
+  }
+
+  .home_main_articulo_oferta {
+width: 23%;
+height: 50%;
+  }
+
+
+.home_main_imagen {
+  height: 80%;
+}
+
 
   
   .home_main_articulo_caja_contenedora h4 {
