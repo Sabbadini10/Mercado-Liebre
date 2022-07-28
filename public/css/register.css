@@ -165,8 +165,12 @@ color: white;
   .register_main_form--enviar{
 width: 80px;
 height: 35px;
-background-color: blue;
+background-color: gray;
 border: none;
 border-radius: 5px;
 color: white;
-                      }
+  }
+
+  .register_main_form--enviar:hover{
+  background-color:#0022AA;
+}
