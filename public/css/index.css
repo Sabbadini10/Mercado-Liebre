@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
@@ -86,40 +87,44 @@ body {
 }
 
 .home_header_lista {
+=======
+.home_main{
+>>>>>>> css-modularizado 
+
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-left: 15%;
-  margin-top: 1em;
 }
 
-.home_header_lista_ul1 {
-  display: inline;
-  margin-right: 1em;
+.home_main_section_visita, .home_main_section_oferta {
+  width: 90%;
 }
 
-.home_header_lista_ul2 {
-  display: inline;
-  margin-left: 1em;
-  margin-top: -1em;
+
+.home_main_articulo {
+  margin-top: 10px;
+
+} 
+
+
+.home_main_articulo_caja_contenedora {
+border: solid 1px #ebebeb;
+padding: 15px;
 }
 
-.home_header_icono_hamburguesa {
-  text-align: center;
-  margin-top: 2em;
-  background-color: var(--celeste);
-  width: 55px;
+.fa-truck-fast {
+  color: var(--verde);
+  border: solid 1px var(--verde);
   padding: 5px;
-  border-radius: 10px;
-  margin-left: 9em;
+  border-radius: 50%;
+  font-size: 1.5em;
 }
 
-.home_header_icono_hamburguesa i {
-  color: var(--grisClaro);
-}
-
-.banner-home {
-  width: 100%;
-  height: 150px;
+.home_main_articulo_caja_imagen {
+  display: flex;
+  padding: 5px;
 }
 
 .home_main_imagen {
@@ -127,9 +132,6 @@ body {
   height: 200px;
 }
 
-h3 {
-  font-size: var(--titulares);
-}
 
 .home_main_precio {
   font-size: var(--precios);
@@ -139,28 +141,164 @@ h3 {
   font-size: var(--descuentos);
 }
 
-.home_footer {
-  background: yellow;
-  text-align: center;
-  padding: 5px;
-  margin-top: 2em;
+
+/*TABLET*/
+@media (min-width: 768px) {
+    .home_header_logo img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .home_header_buscador_lupa{
+      width: 30px;
+      height: 40px;
+      
+    }
+    .home_header_buscador_input {
+      width: 300px;
+      height: 40px;
+    }
+
+    .home_header_icono_mano {
+      font-size: 18px;
+      margin: 1em 0;
+    }
+    
+
+
+    .home_header_lista {
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+      }
+
+    
+      .home_header_lista li {
+        font-size: var(--descuentos);
+      }
+      
+      .home_header_lista a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      .home_header_icono_hamburguesa {
+        display: none;
+      }
+
+      .home_main_imagen_banner{
+        border-bottom: solid 1px #000;
+      }
+
+      .banner-home {
+        height: 250px;
+        
+      }
+
+      .home_main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-content: center;
+      }
+      
+        .home_main_section_visita, .home_main_section_oferta {
+          width: 90%;
+        }
+
+      h3 {
+        font-size: 35px;
+        color: var(--grisOscuro);
+      }
+      
+      .home_main_imagen {
+        height: 400px;
+      }
+      .home_main_articulo_caja_imagen {
+        display: flex;
+        justify-content: center;
+      }
+    
+      
+
+      .home_main_articulo{
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+        border: solid 1px var(--grisOscuro);
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      .home_main_articulo_oferta{
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+        border: solid 1px var(--grisOscuro);
+        margin-bottom: 10px;
+        border-radius: 5px;
+      }
+
+      .home_main_articulo_caja_contenedora h4 {
+        display: flex;
+        font-size: 25px;
+        color: #000;
+      }
+    
+
+      .home_footer h3 {
+       font-size: 35px;
+      }
+      
+      .home_footer p {
+        font-size: 25px;
+      }
+
+      
+  .home_footer_section_article .home_footer_parrafo_copyright{
+    font-size: 25px;
+    color: var(--grisOscuro);
+  }
+      
 }
 
-.home_footer span {
-  font-size: 2em;
-  color: var(--celeste);
-  margin-bottom: 10px;
+/*ESCRITORIO*/
+@media (min-width:1024px) {
+  
+.home_main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: center;
 }
 
-.home_footer h3 {
-  color: var(--grisOscuro);
-}
+  .home_main_section_visita, .home_main_section_oferta {
+    width: 90%;
+  }
 
-.home_footer p {
-  color: var(--grisOscuro);
-}
+  
+  .home_main_articulo_caja_contenedora h4 {
+    display: flex;
+    font-size: 25px;
+    color: #000;
+  }
 
-.home_footer_section {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  .home_main h3 {
+    font-size: 35px;
+  }
+
+  .home_main_section_oferta h3{
+    font-size: 35px;
+  }
+
+  .home_footer_parrafo {
+    text-align: center;
+    color: var(--grisOscuro);
+    font-size: 25px;
+  }
+
+  .home_footer_section_article .home_footer_parrafo_copyright{
+    font-size: 25px;
+    align-self: flex-start;
+    color: var(--grisOscuro);
+  }
+
 }
