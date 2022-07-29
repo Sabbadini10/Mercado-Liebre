@@ -5,11 +5,10 @@ const app = express();
 const publicPath = path.resolve(__dirname, './public');
 
 app.use(express.static(publicPath))
+app.set("puerto", process.env.PORT || 3000);
 
-
-app.listen(3030, () => {
-    console.log('Server is running on port 3030');
-    });
+app.listen(app.get("puerto"), () => console.log(`Server is running on port 3000 ${app.get('puerto')}`)
+    );
 
     app.get('/', (req, res) => {
         res.sendFile(path.resolve('./view/home.html'));
