@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/logo-mercado-liebre.svg" />
+    <link rel="stylesheet" href="/css/general.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/7ad2cc9ddb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Mercado Liebre</title>
+  </head>
+  <body>
+    <header>
+    </header>
+    <main class="register_main">
+        <section class="register_main_conteiner">
+            <article class="register_main_titulo_icono1">
+                <div class="register_main_logo">
+                    <img class="home_header_logo_img" src="/images/logo-mercado-liebre.svg" alt=""></div>
+                <div class="register_main_icono">
+                    <a class="register_main_conteiner--home" href="/"><i class="fa-solid fa-house"></i> Home</a>
+                </div>
+            </article>
+            <article class="register_main_titulo_icono2">
+                <div class="register_main_titulo">
+                    <h1 class="register_main_conteiner--titulo">Registro</h1>
+                </div>
+            </article>
+            
+            <form action="" class="register_main_conteiner--form">
+                <div class="register_main_form--caja">
+                    <label class="register_main_form--label" for="nombre">Nombre y Apellido:</label>
+                    <input class="register_main_form--input" type="text" id="nombre" name="nombre"/>
+                    <small class="register_main_form--error">El nombre y el apellido es obligatorio</small>
+                </div>
+                <div class="register_main_form--caja">
+                    <label class="register_main_form--label" for="usuario">Nombre de usuario:</label>
+                    <input class="register_main_form--input" type="text" id="usuario" name="usuario"/>
+                    <small class="register_main_form--error">El nombre de usuario es obligatorio</small>
+                </div>
+                <div class="register_main_form--caja">
+                    <label class="register_main_form--label" for="email">Email:</label>
+                    <input class="register_main_form--input" type="email" id="email" name="email"/>
+                    <small class="register_main_form--error">El Correo es obligatorio</small>
+                </div>
+                <div class="register_main_form--caja">
+                    <label class="register_main_form--label" for="contrasenia">Contrasenia:</label>
+                    <input class="register_main_form--input" type="password" id="password" name="password"/>
+                    <small class="register_main_form--error">La contrasenia es obligatoria</small>
+                </div>
+                <div class="register_main_form--caja">
+                    <label class="register_main_form--label" for="contrasenia">Repetir Contrasenia:</label>
+                    <input class="register_main_form--input" type="password" id="password" name="password"/>
+                    <small class="register_main_form--error">La contrasenia debe ser identica</small>
+                </div>
+                <div class="register_main_form--caja">
+                    <label class="register_main_form--label" for="nacimiento">Fecha de nacimiento:</label>
+                    <input class="register_main_form--input" type="date" id="nacimiento" name="nacimiento"/>
+                    <small class="register_main_form--error">Debes tener mas de 18</small>
+                </div>
+                <div class="register_main_form--caja">
+                    <label class="register_main_form--label" for="ciudad">Ciudad:</label>
+                    <select class="register_main_form--input" name="ciudad" id="ciudad">
+                        <option>Buenos Aires</option>
+                        <option>Neuquen</option>
+                        <option>Catamarca</option>
+                        <option>Misiones</option>
+                        <option>Rio Negro</option>
+                        <option>Tierra Del Fuego</option>
+                        <option>Chubut</option>
+                      </select>
+                    <small class="register_main_form--error">La ciudad es obligatoria</small>
+                </div>
+                <div class="register_main_form--caja">
+                    <label class="register_main_form--label" for="domicilio">Domicilio:</label>
+                    <input class="register_main_form--input" type="text" id="domicilio" name="domicilio"/>
+                    <small class="register_main_form--error">El domicilio es obligatorio</small>
+                </div>
+                <div class="register_main_form--radio">
+                    <label class="register_main_form--label" for="perfil">Perfil de usuario:</label>
+                    <article class="register_main_form--radio_caja">
+                        <div class="register_main_form--radio_comprador">
+                            <label>Comprador</label>
+                        <input type="radio" id="comprador" name="comprador" value="comprador"/>
+                        </div>
+                        <div class="register_main_form--radio_vendedor"><label>Vendedor</label>
+                            <input type="radio" id="vendedor" name="vendedor" value="vendedor"/></div>
+                        
+                            
+                            </article>
+                    <small class="register_main_form--error">El perfil de usuario es obligatorio</small>
+                </div>
+                <div class="register_main_form--checkbox">
+                    <label class="register_main_form--label">Intereses</label>
+                    <section class="register_main_form--checkbox--section">
+                    <article><input class="register_main_form--checkbox_input" type="checkbox" id="electro" value="electro"><label>Electro</label></article> 
+                    <article><input class="register_main_form--checkbox_input" type="checkbox" id="moda" value="moda"><label>Moda</label></article>
+                    <article><input class="register_main_form--checkbox_input" type="checkbox" id="hogar" value="hogar"><label>Hogar</label></article>
+                    <article><input class="register_main_form--checkbox_input" type="checkbox" id="jugueteria" value="jugueteria"><label>Jugueteria</label></article>
+                   <article> <input class="register_main_form--checkbox_input" type="checkbox" id="vidasana" value="vidasana"><label>Vida sana</label></article>
+                    </section>
+                   
+                    </div>
+                    <div class="register_main_form--button">
+                        <button  class="register_main_form--borrar" type="reset">Borrar</button>
+                        <button  class="register_main_form--enviar" type="submit">Registrate</button>
+                    </div>
+            </form>
+        </section>
+        
+
+        </form>
+    </main>
+    <footer></footer>
+  </body>
+  </html>

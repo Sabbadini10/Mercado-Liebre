@@ -104,15 +104,33 @@ body {
 
 
 .home_main_articulo {
-  gap: 10px
+  gap: 10px;
+  height: auto;
 } 
+
+.home_main_articulo_caja_contenedora h4 {
+    opacity: 0.0;
+    width: 100%;
+    overflow: hidden;
+    transition: 1s; 
+}
+
+.home_main_articulo_caja_contenedora:hover h4 {
+  opacity: 1;
+}
+
+
+.home_main_articulo:hover, .home_main_articulo_oferta:hover {
+  box-shadow: 5px 10px #888888;
+  transition: 2s;
+}
 
 .home_main_articulo_precio {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 
@@ -120,6 +138,8 @@ body {
 border: solid 1px #ebebeb;
 padding: 15px;
 }
+
+
 
  .home_main_articulo_caja_contenedora span {
 display: flex;
@@ -137,8 +157,14 @@ position: relative;
     height: 40px;
     background-color: #FFF;
     position: absolute;
-    right:20px;
+    right: -10px;
     top: -35px;
+    
+}
+
+.fa-truck-fast:hover{
+  transform: rotate(360deg);
+  transition: 5s;
 }
 
 .home_main_articulo_caja_imagen {
@@ -334,23 +360,22 @@ width: 45%
     
 
       h3 {
-        font-size: 35px;
+        font-size: 30px;
         color: var(--grisOscuro);
       }
 
-      .home_footer h3 {
-       font-size: 35px;
-      }
       
-      .home_footer p {
+      .home_footer_parrafo {
         font-size: 25px;
       }
 
       
-  .home_footer_section_article .home_footer_parrafo_copyright{
-    font-size: 25px;
-    color: var(--grisOscuro);
-  }
+      .home_footer_parrafo_copyright{
+        margin-top: 20px;
+        width: 100%;
+        align-self: flex-start;
+        color: var(--grisOscuro);
+      }
       
 }
 
@@ -423,21 +448,47 @@ height: 50%;
   }
 
   .home_main h3 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .home_main_section_oferta h3{
-    font-size: 35px;
+    font-size: 30px;
+  }
+
+  .home_footer{
+    padding: 3px;
+  }
+
+
+  .home_footer h3 {
+    font-size: 25px;
   }
 
   .home_footer_parrafo {
     text-align: center;
     color: var(--grisOscuro);
-    font-size: 25px;
+    font-size: 15px;
   }
 
-  .home_footer_section_article .home_footer_parrafo_copyright{
-    font-size: 25px;
+  .home_footer_section {
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .home_footer_section_article {
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+  }
+
+
+  .home_footer_parrafo_copyright{
+    margin-top: 20px;
+    width: 100%;
     align-self: flex-start;
     color: var(--grisOscuro);
   }
