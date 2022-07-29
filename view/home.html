@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/logo-mercado-liebre.svg" />
     <link rel="stylesheet" href="/css/general.css" type="text/css" />
     <script
       src="https://kit.fontawesome.com/7ad2cc9ddb.js"
@@ -13,29 +14,41 @@
   </head>
   <body class="home">
     <header class="home_header">
-      <section class="home_header_logo_input">
-        <article class="home_header_logo">
-          <img src="/images/logo-mercado-liebre.svg" alt="logo" />
-        </article>
-        <article class="home_header_buscador">
-          <input
-            class="home_header_buscador_input"
-            type="text"
-            placeholder="Buscar Productos, Marcas"
-          />
-          <span class="home_header_buscador_lupa">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </span>
-        </article>
-      </section>
-      <section class="home_header_icono_text">
-        <article class="home_header_icono_mano">
-          <span>
-            <i class="fa-solid fa-hand-holding-dollar"></i>
-          </span>
-          <p>Compra en cuotas y sin tarjeta de credito</p>
-        </article>
-      </section>
+      <div class="home_header_contenedor_log_inp_text">
+        <section class="home_header_logo_input">
+          <div class="home_header_logo">
+            <img
+              class="home_header_logo_img"
+              src="/images/logo-mercado-liebre.svg"
+              alt="logo"
+            />
+          </div>
+          <article class="home_header_buscador">
+            <div class="home_header_buscador_input--contenedor">
+              <input
+                class="home_header_buscador_input"
+                type="text"
+                placeholder="Buscar Productos, Marcas"
+              />
+            </div>
+            <div class="home_header_buscador_lupa--contenedor">
+              <span class="home_header_buscador_lupa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </div>
+          </article>
+        </section>
+        <section class="home_header_icono_text">
+          <article class="home_header_icono_mano">
+            <span>
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </span>
+            <p>Compra en cuotas y sin tarjeta de credito</p>
+          </article>
+        </section>
+
+      </div>
+
       <section class="home_header_lista">
         <ul class="home_header_lista_ul1">
           <li><a href="#">Ofertas</a></li>
@@ -71,17 +84,18 @@
           </span>
         </article>
       </section>
+    </header>
+
+    <main class="home_main">
       <section class="home_main_imagen_banner">
         <img
           class="banner-home"
           src="/images/img-home-banner.jpg"
-          alt="banner-home"/>
+          alt="banner-home"
+        />
       </section>
-    </header>
-
-    <main class="home_main">
+      <h3>Basado en su ultima visita</h3>
       <section class="home_main_section_visita">
-        <h3>Basado en su ultima visita</h3>
         <article class="home_main_articulo">
           <div class="home_main_articulo_caja_imagen">
             <img
@@ -94,8 +108,10 @@
             <span>
               <i class="fa-solid fa-truck-fast"></i>
             </span>
-            <p class="home_main_precio">$6.770</p>
-            <p class="home_main_oferta">40% OFF</p>
+            <div class="home_main_articulo_precio">
+              <p class="home_main_precio">$6.770</p>
+              <p class="home_main_oferta">40% OFF</p>
+            </div>
             <h4>Cafetera Moulinex</h4>
           </div>
         </article>
@@ -109,8 +125,10 @@
           </div>
           <div class="home_main_articulo_caja_contenedora">
             <span><i class="fa-solid fa-truck-fast"></i></span>
-            <p class="home_main_precio">$230.000</p>
-            <p class="home_main_oferta">20% off</p>
+            <div class="home_main_articulo_precio">
+              <p class="home_main_precio">$230.000</p>
+              <p class="home_main_oferta">20% off</p>
+            </div>
             <h4>MacBook Pro 2019</h4>
           </div>
         </article>
@@ -124,8 +142,10 @@
           </div>
           <div class="home_main_articulo_caja_contenedora">
             <span><i class="fa-solid fa-truck-fast"></i></span>
-            <p class="home_main_precio">$70.500</p>
-            <p class="home_main_oferta">10% off</p>
+            <div class="home_main_articulo_precio">
+              <p class="home_main_precio">$70.500</p>
+              <p class="home_main_oferta">10% off</p>
+            </div>
             <h4>Samsung Galaxy S10</h4>
           </div>
         </article>
@@ -139,15 +159,17 @@
           </div>
           <div class="home_main_articulo_caja_contenedora">
             <span><i class="fa-solid fa-truck-fast"></i></span>
-            <p class="home_main_precio">$23.200</p>
-            <p class="home_main_oferta">5% off</p>
+            <div class="home_main_articulo_precio">
+              <p class="home_main_precio">$23.200</p>
+              <p class="home_main_oferta">5% off</p>
+            </div>
             <h4>SmartTv Samsung 43"</h4>
           </div>
         </article>
       </section>
-      <br/><br/>
+      <br /><br />
+      <h3>Sección de Ofertas</h3>
       <section class="home_main_section_oferta">
-        <h3>Sección de Ofertas</h3>
         <article class="home_main_articulo_oferta">
           <div class="home_main_articulo_caja_imagen">
             <img
@@ -158,8 +180,10 @@
           </div>
           <div class="home_main_articulo_caja_contenedora">
             <span><i class="fa-solid fa-truck-fast"></i></span>
-            <p class="home_main_precio">$6.770</p>
-            <p class="home_main_oferta">40% OFF</p>
+            <div class="home_main_articulo_precio">
+              <p class="home_main_precio">$6.770</p>
+              <p class="home_main_oferta">40% Off</p>
+            </div>
             <h4>Cafetera Moulinex</h4>
           </div>
         </article>
@@ -173,8 +197,10 @@
           </div>
           <div class="home_main_articulo_caja_contenedora">
             <span><i class="fa-solid fa-truck-fast"></i></span>
-            <p class="home_main_precio">$230.000</p>
-            <p class="home_main_oferta">20% off</p>
+            <div class="home_main_articulo_precio">
+              <p class="home_main_precio">$230.000</p>
+              <p class="home_main_oferta">20% off</p>
+            </div>
             <h4>MacBook Pro 2019</h4>
           </div>
         </article>
@@ -188,8 +214,10 @@
           </div>
           <div class="home_main_articulo_caja_contenedora">
             <span><i class="fa-solid fa-truck-fast"></i></span>
-            <p class="home_main_precio">$70.500</p>
-            <p class="home_main_oferta">10% off</p>
+            <div class="home_main_articulo_precio">
+              <p class="home_main_precio">$70.500</p>
+              <p class="home_main_oferta">10% off</p>
+            </div>
             <h4>Samsung Galaxy S10</h4>
           </div>
         </article>
@@ -203,8 +231,10 @@
           </div>
           <div class="home_main_articulo_caja_contenedora">
             <span><i class="fa-solid fa-truck-fast"></i></span>
-            <p class="home_main_precio">$70.500</p>
-            <p class="home_main_oferta">5% off</p>
+            <div class="home_main_articulo_precio">
+              <p class="home_main_precio">$70.500</p>
+              <p class="home_main_oferta">5% off</p>
+            </div>
             <h4>SmartTv Samsung 43"</h4>
           </div>
         </article>
@@ -242,11 +272,13 @@
             puedas hacer, porque estás siempre protegid@.
           </p>
         </article>
-    <article class="home_footer_section_article">
-      <b><p class="home_footer_parrafo_copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p></b>
-    </article>
-  
-        
+        <article class="home_footer_section_article">
+          <b
+            ><p class="home_footer_parrafo_copyright">
+              Copyright © 1999-2020 MercadoLiebre S.R.L.
+            </p></b
+          >
+        </article>
       </section>
     </footer>
   </body>

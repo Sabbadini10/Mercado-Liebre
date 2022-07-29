@@ -1,50 +1,61 @@
 .home_header {
-    width: 100%;
     background-color: var(--amarillo);
-    margin-bottom: 1em;
+    padding: 20px;
   }
   
-  .home_header_logo{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 1rem;
-  }
-  
-  
-  .home_header_logo img {
-    width: 200px;
-    height: 150px;
-  }
-  
-  .home_header_buscador {
+  .home_header_logo_input{
     display: flex;
     flex-direction: row;
-    margin-left: 1rem;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    gap: 10%;
+    padding: 5%;
   }
-  
-  .home_header_buscador_lupa{
-    background-color: #ffffff;
-    border-radius: 5px;
-    border: solid 1px black;
-    width: 20px;
-    height: 30px;
+ 
+  .home_header_logo {
+    width: 50%;
+    padding: 0;
+  }
+
+  .home_header_buscador {
+    width: 50%;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
   
+  .home_header_logo_img {
+    width: 100%;
+  }
+
+  .home_header_buscador_lupa--contenedor {
+    width: 25px;
+    position: absolute;
+    height: 39px;
+    background-color: var(--grisClaro);
+    border: none;
+    border-radius: 5px;
+    right: 0px;
+  }
+
+
+  .home_header_buscador_input {
+    border: solid 1px var(--color-grisClaro);
+    display: block;
+    width: 100%;
+    padding: 7px 35px 0px 7px;
+    border-radius: 5px;
+    height: 39px;
+    font-size: 18px;
+  }
+
   .fa-magnifying-glass {
     font-size: 1em;
-    color: black;
+    color: var(--grisOscuro);
+    margin-top: 10px;
   }
   
-  .home_header_buscador_input {
-    width: 200px;
-    height: 30px;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-  }
   
   .home_header_icono_text {
     margin-top: 1em;
@@ -60,9 +71,6 @@
   
   .home_header_lista {
     display: none;
-    height: auto;
-    justify-content: center;
-    margin-top: 2px;
   }
   
   
@@ -71,7 +79,6 @@
   
   .home_header_lista li {
     list-style: none;
-    margin-top: 1px;
   }
   
   .home_header_lista a {
@@ -81,11 +88,10 @@
   
   
   .home_header_icono_hamburguesa {
-    margin-top: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1em;
+    margin-top: 1em;
   }
   
   
