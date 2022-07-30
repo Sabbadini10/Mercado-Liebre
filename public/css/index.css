@@ -25,66 +25,6 @@ body {
   font-family: var(--fuente);
 }
 
-.home_header {
-  background-color: var(--amarillo);
-  width: 100%;
-  height: 400px;
-}
-
-.home_header_logo_input {
-  display: block;
-  margin-left: 5px;
-}
-
-.home_header_logo {
-  display: inline-block;
-  margin-top: -2em;
-}
-
-.home_header_logo img {
-  width: 50%;
-  height: 200px;
-  margin-left: 2em;
-  margin-bottom: -3em;
-}
-
-.home_header_buscador {
-  display: inline-block;
-  margin-left: 1em;
-  margin-top: -3em;
-}
-
-.home_header_buscador_input {
-  width: 250px;
-  height: 30px;
-  border-radius: 5px;
-}
-
-.home_header_icono_text {
-  display: flex;
-  padding: 5px;
-  margin-left: 2em;
-  margin-top: 1em;
-}
-
-.home_header_icono_text .home_header_icono_mano {
-  display: flex;
-  padding: 5px;
-}
-
-.home_header_lista {
-  margin-left: 1em;
-}
-
-.home_header_lista li {
-  list-style: none;
-}
-
-.home_header_lista a {
-  text-decoration: none;
-  color: #000;
-}
-
 
 
 .home_main{
