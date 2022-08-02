@@ -1,18 +1,16 @@
 {
   "name": "trabajomobile",
-  "version": "1.0.0",
-  "description": "Proyecto Mercado Liebre",
-  "main": "app.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node app.js",
-    "dev" : "nodemon app.js"
+    "start": "node ./bin/www"
   },
-  "keywords": [],
-  "author": "Matias Sabbadini",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1",
-    "nodemon": "^2.0.19"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   }
 }

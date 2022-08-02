@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/images/logo-mercado-liebre.svg" />
-    <link rel="stylesheet" href="/css/general.css" type="text/css" />
+    <link rel="stylesheet" href="/stylesheets/general.css" type="text/css" />
     <script
       src="https://kit.fontawesome.com/7ad2cc9ddb.js"
       crossorigin="anonymous"
@@ -33,13 +33,13 @@
           <form action="" class="register_main_conteiner--form">
               <div class="register_main_form--caja">
                   <label class="register_main_form--label" for="usuario">Nombre de usuario:</</label>
-                  <input class="register_main_form--input" type="text" id="usuario" name="usuario"/>
-                  <small class="register_main_form--error">El nombre de usuario es obligatorio</small>
+                  <input class="register_main_form--input" type="text" id="usuario" name="usuario"  minlength="5" maxlength="20" required title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 20" pattern="[A-Za-z0-9]{5,20}"/>
+                  <!--<small class="register_main_form--error">El nombre de usuario es obligatorio</small>-->
               </div>
               <div class="register_main_form--caja">
                 <label class="register_main_form--label" for="contrasenia">Contrasenia:</label>
-                <input class="register_main_form--input" type="password" id="password" name="password"/>
-                <small class="register_main_form--error">La contrasenia es obligatoria</small>
+                <input class="register_main_form--input" type="password" id="password" name="password" minlength="5" maxlength="20" title="Tamaño mínimo: 5. Tamaño máximo: 20" required pattern="[A-Za-z0-9]{5,20}"/>
+                <!--<small class="register_main_form--error">La contrasenia es obligatoria</small>-->
             </div>
             <div class="register_main_form--button">
               <button  class="register_main_form--borrar" type="reset">Borrar</button>
