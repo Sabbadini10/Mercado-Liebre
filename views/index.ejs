@@ -1,89 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="icon" href="/images/favicon.ico" sizes="32x32" />
-    <link rel="stylesheet" href="/stylesheets/general.css" type="text/css" />
-    <script
-      src="https://kit.fontawesome.com/7ad2cc9ddb.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Mercado Liebre</title>
-  </head>
+  <%-include('./partials/head') %>
+  
   <body class="home">
-    <header class="home_header">
-      <div class="home_header_contenedor_log_inp_text">
-        <section class="home_header_logo_input">
-          <div class="home_header_logo">
-            <img
-              class="home_header_logo_img"
-              src="/images/logo-mercado-liebre.svg"
-              alt="logo"
-            />
-          </div>
-          <article class="home_header_buscador">
-            <div class="home_header_buscador_input--contenedor">
-              <input
-                class="home_header_buscador_input"
-                type="text"
-                placeholder="Buscar Productos, Marcas"
-              />
-            </div>
-            <div class="home_header_buscador_lupa--contenedor">
-              <span class="home_header_buscador_lupa">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </span>
-            </div>
-          </article>
-        </section>
-        <section class="home_header_icono_text">
-          <article class="home_header_icono_mano">
-            <span>
-              <i class="fa-solid fa-hand-holding-dollar"></i>
-            </span>
-            <p>Compra en cuotas y sin tarjeta de credito</p>
-          </article>
-        </section>
-      </div>
-
-      <section class="home_header_lista">
-        <ul class="home_header_lista_ul1">
-          <li><a href="#">Ofertas</a></li>
-          <li><a href="#">Tienda Oficiales</a></li>
-          <li><a href="#">Vender</a></li>
-          <li><a href="#">Ayuda</a></li>
-        </ul>
-        <ul class="home_header_lista_ul2">
-          <li>
-            <a href="/users/register">Crea tu cuenta</a>
-            <span>
-              <i class="fa-solid fa-address-card"></i>
-            </span>
-          </li>
-          <li>
-            <a href="/users/login">Ingresa</a>
-            <span>
-              <i class="fa-solid fa-right-to-bracket"></i>
-            </span>
-          </li>
-          <li>
-            <a href="#">Mis Compras</a>
-            <span>
-              <i class="fa-solid fa-basket-shopping"></i>
-            </span>
-          </li>
-        </ul>
-      </section>
-      <section class="home_header_icono_hamburguesa">
-        <article class="home_header_icono_hamburguesa_menu">
-          <span>
-            <i class="fa-solid fa-bars"></i>
-          </span>
-        </article>
-      </section>
-    </header>
+    <%-include('./partials/header') %>
     <main class="home_main">
       <section class="home_main_imagen_banner">
         <img
@@ -238,48 +158,6 @@
         </article>
       </section>
     </main>
-    <footer class="home_footer">
-      <section class="home_footer_section">
-        <article class="home_footer_section_article">
-          <span class="home_footer_section_icono">
-            <i class="fa-solid fa-credit-card"></i>
-          </span>
-          <h3>Pagá con tarjeta o en efectivo</h3>
-          <p class="home_footer_parrafo">
-            Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
-            efectivo en puntos de pago. ¡Y siempre es seguro!
-          </p>
-        </article>
-        <article class="home_footer_section_article">
-          <span class="home_footer_section_icono">
-            <i class="fa-solid fa-gift"></i>
-          </span>
-          <h3>Envío gratis desde $ 2.500</h3>
-          <p class="home_footer_parrafo">
-            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
-            miles de productos. Es un beneficio de Mercado Puntos.
-          </p>
-        </article>
-        <article class="home_footer_section_article">
-          <span class="home_footer_section_icono">
-            <i class="fa-solid fa-user-shield"></i>
-          </span>
-          <h3>Seguridad, de principio a fin</h3>
-          <p class="home_footer_parrafo">
-            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
-            puedas hacer, porque estás siempre protegid@.
-          </p>
-        </article>
-      </section>
-      <section class="home_footer_section_copyright">
-        <article>
-          <b
-            ><p class="home_footer_parrafo_copyright">
-              Copyright © 1999-2020 MercadoLiebre S.R.L.
-            </p></b
-          >
-        </article>
-      </section>
-    </footer>
+    <%-include('./partials/footer') %>
   </body>
 </html>
