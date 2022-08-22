@@ -30,7 +30,7 @@
                 </div>
             </article>
             
-            <form action="" class="register_main_conteiner--form">
+            <form action="./productos/create.ejs" class="register_main_conteiner--form">
                 <div class="register_main_form--caja">
                     <label class="register_main_form--label" for="nombre">Nombre y Apellido:</label>
                     <input class="register_main_form--input" type="text" id="nombre" name="nombre" minlength="5" maxlength="20" required title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 20" pattern="[A-Za-z0-9]{5,20}"/>
@@ -103,6 +103,11 @@
                    <article> <input class="register_main_form--checkbox_input" type="checkbox" id="vidasana" value="vidasana"><label>Vida sana</label></article>
                     </section>
                    
+                    </div>
+                    <div class="register_main_form--caja">
+                        <label class="register_main_form--label" for="imageNew">Imagen:</label>
+                        <input class="register_main_form--input" type="file" id="imageNew" name="imageNew" required/>
+                        <!--<small class="register_main_form--error">Debes tener mas de 18</small>-->
                     </div>
                     <div class="register_main_form--button">
                         <button  class="register_main_form--borrar" type="reset">Borrar</button>
