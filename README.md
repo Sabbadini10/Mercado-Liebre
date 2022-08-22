@@ -8,7 +8,7 @@ El código fuente del sistema ha sido desarrollado con el lenguaje de programaci
 
 ## Comenzando 🚀
 
-En este proyecto se construye el sitio web oficial del eCommerce Boun Aseo, pronto se podra comprar, registrase, loguiarse, informarte de nuevos productos, de nuevas ofertas, etc. **[Puedes revisar el prototipo del sitio en Figma](https://www.figma.com/file/lLTlqBGqzSZRe80TMWpLVj/Proyecto-integrador!?node-id=0%3A1)** tambien puedes ver como trabajamos en conjunto **[AQUI](https://trello.com/b/TPYwC9QH/c15-grupo-2-buon-aseo)**
+En este proyecto se construye el sitio web oficial del eCommerce Mercado Liebre, pronto se podra comprar, registrase, loguiarse, informarte de nuevos productos, de nuevas ofertas, etc.
 
 ## Pre-requisitos 📋
 Para poder trabajar con el siguiente proyecto debe de tener conocimientos de desarrollo web con NODEJS, Javascript, CSS3, HTML5 y SQL.
@@ -25,7 +25,7 @@ Usamos **Express** que es un framework de **NodeJS**, Usamos **Javascript**,**CS
 - Edad: 30 años
 - Ciudad: Cutral-Co
 - Hobby: Ver Peliculas de Terror
-- Trabajo: Frontend Developer in Buon Aseo
+- Trabajo: Frontend Developer in Mercado Liebre
 
 ***
 

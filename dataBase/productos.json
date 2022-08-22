@@ -156,13 +156,13 @@
    {
       "id": 15,
       "name": "Bicicleta Mountain Bike Fierce Rodado 29",
-      "description": "Bicicleta Mountain Bike Fierce Rodado 29 21 velocidades. Tipo: Mountain Bike. Rodado: 29. Material Cuadro: Aluminio. Talle: 18. Suspensión: Delantera. Velocidades: 21 - Shimano. Sistema de Freno: Disco Mecánico. Llantas: Doble pared.",
       "price": 15979,
-      "discount": 12,
+      "discount": 10,
+      "category": "visited",
+      "description": "Bicicleta Mountain Bike Fierce Rodado 29 21 velocidades. Tipo: Mountain Bike. Rodado: 29. Material Cuadro: Aluminio. Talle: 18. Suspensión: Delantera. Velocidades: 21 - Shimano. Sistema de Freno: Disco Mecánico. Llantas: Doble pared.",
       "image": [
          "img-bicicleta-fierce.jpg"
-      ],
-      "category": "visited"
+      ]
    },
    {
       "id": 16,

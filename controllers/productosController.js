@@ -30,7 +30,7 @@ const controller = {
 			res.render('producto-crear-form',{
 				productos
 			})
-            res.redirect('/detalle/'+ req.params.id)
+            res.redirect('/detalle/' + '/' + req.params.id)
 	},
 	
 	// Create -  Method to store
