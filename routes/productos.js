@@ -1,7 +1,7 @@
 // ************ Require's ************
 const express = require('express');
 const router = express.Router();
-const upload = require('../middleware/cargarFotoProducto'); 
+const {uploadProductos} = require('../middleware/cargarFotoProducto')
 
 
 // ************ Controller Require ************
@@ -12,15 +12,7 @@ router.get('/', index);
 
 /*** CREATE ONE PRODUCT ***/ 
 router.get('/crear', crear); 
-router.post("/crear", upload.array("image"), tienda, (req, res, err) => {
-    if (err) {
-    console.log("error");
-    console.log(err);
-    }
-    var file = req.files;
-    res.end();
-    console.log(req.files);
-    });
+router.post("/crear", uploadProductos.array("image"), tienda);
 
 
 /*** GET ONE PRODUCT ***/ 

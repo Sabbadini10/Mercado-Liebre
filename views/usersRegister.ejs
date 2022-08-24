@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/images/logo-mercado-liebre.svg" />
-    <link rel="stylesheet" href="/stylesheets/general.css" type="text/css" />
+    <link rel="stylesheet" href="/css/general.css" type="text/css" />
     <script
       src="https://kit.fontawesome.com/7ad2cc9ddb.js"
       crossorigin="anonymous"
@@ -30,40 +30,40 @@
                 </div>
             </article>
             
-            <form action="./productos/create.ejs" class="register_main_conteiner--form">
+            <form action="" method="POST" enctype="multipart/form-data" class="register_main_conteiner--form">
                 <div class="register_main_form--caja">
                     <label class="register_main_form--label" for="nombre">Nombre y Apellido:</label>
-                    <input class="register_main_form--input" type="text" id="nombre" name="nombre" minlength="5" maxlength="20" required title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 20" pattern="[A-Za-z0-9]{5,20}"/>
+                    <input class="register_main_form--input" type="text" id="nombre" name="name" minlength="5" maxlength="40" title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 20" pattern="[A-Za-z0-9]{5,20}"/>
                     <!--<small class="register_main_form--error">El nombre y el apellido es obligatorio</small>-->
                 </div>
                 <div class="register_main_form--caja">
                     <label class="register_main_form--label" for="usuario">Nombre de usuario:</label>
-                    <input class="register_main_form--input" type="text" id="usuario" name="usuario" minlength="5" maxlength="20" required title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 20" pattern="[A-Za-z0-9]{5,20}"/>
+                    <input class="register_main_form--input" type="text" id="usuario" name="usuario" minlength="5" maxlength="40"  title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 20" pattern="[A-Za-z0-9]{5,20}"/>
                     <!--<small class="register_main_form--error">El nombre de usuario es obligatorio</small>-->
                 </div>
                 <div class="register_main_form--caja">
                     <label class="register_main_form--label" for="email">Email:</label>
-                    <input class="register_main_form--input" type="email" id="email" name="email" required/>
+                    <input class="register_main_form--input" type="email" id="email" name="email" />
                     <!--<small class="register_main_form--error">El Correo es obligatorio</small>-->
                 </div>
                 <div class="register_main_form--caja">
                     <label class="register_main_form--label" for="contrasenia">Contrasenia:</label>
-                    <input class="register_main_form--input" type="password" id="password" name="password" minlength="5" maxlength="20" required title="Tamaño mínimo: 5. Tamaño máximo: 20" pattern="[A-Za-z0-9]{5,20}" />
+                    <input class="register_main_form--input" type="password" id="password" name="password" minlength="5" maxlength="40"  title="Tamaño mínimo: 5. Tamaño máximo: 20" pattern="[A-Za-z0-9]{5,20}" />
                     <!--<small class="register_main_form--error">La contrasenia es obligatoria</small>-->
                 </div>
                 <div class="register_main_form--caja">
                     <label class="register_main_form--label" for="contrasenia">Repetir Contrasenia:</label>
-                    <input class="register_main_form--input" type="password" id="password" name="password" minlength="5" maxlength="20" required title="Tamaño mínimo: 5. Tamaño máximo: 20" pattern="[A-Za-z0-9]{5,20}" />
+                    <input class="register_main_form--input" type="password" id="repeatPassword" name="repeatPassword" minlength="5" maxlength="40" title="Tamaño mínimo: 5. Tamaño máximo: 20" pattern="[A-Za-z0-9]{5,20}" />
                     <!--<small class="register_main_form--error">La contrasenia debe ser identica</small>-->
                 </div>
                 <div class="register_main_form--caja">
                     <label class="register_main_form--label" for="nacimiento">Fecha de nacimiento:</label>
-                    <input class="register_main_form--input" type="date" id="nacimiento" name="nacimiento" required/>
+                    <input class="register_main_form--input" type="date" id="nacimiento" name="nacimiento" />
                     <!--<small class="register_main_form--error">Debes tener mas de 18</small>-->
                 </div>
                 <div class="register_main_form--caja">
                     <label class="register_main_form--label" for="ciudad">Ciudad:</label>
-                    <select class="register_main_form--input" name="ciudad" id="ciudad" required>
+                    <select class="register_main_form--input" name="ciudad" id="ciudad" >
                         <option>Buenos Aires</option>
                         <option>Neuquen</option>
                         <option>Catamarca</option>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="register_main_form--caja">
                     <label class="register_main_form--label" for="domicilio">Domicilio:</label>
-                    <input class="register_main_form--input" type="text" id="domicilio" name="domicilio" minlength="5" maxlength="40" required pattern="[A-Za-z0-9]+"/>
+                    <input class="register_main_form--input" type="text" id="domicilio" name="domicilio" minlength="5" maxlength="40" pattern="[A-Za-z0-9]+"/>
                     <!--<small class="register_main_form--error">El domicilio es obligatorio</small>-->
                 </div>
                 <div class="register_main_form--radio">
@@ -105,8 +105,8 @@
                    
                     </div>
                     <div class="register_main_form--caja">
-                        <label class="register_main_form--label" for="imageNew">Imagen:</label>
-                        <input class="register_main_form--input" type="file" id="imageNew" name="imageNew" required/>
+                        <label class="register_main_form--label" for="image">Imagen:</label>
+                        <input class="register_main_form--input" type="file" id="image" name="imagen"/>
                         <!--<small class="register_main_form--error">Debes tener mas de 18</small>-->
                     </div>
                     <div class="register_main_form--button">

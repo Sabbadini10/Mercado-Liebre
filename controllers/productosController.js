@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { loadProductos ,tiendaProductos } = require('../dataBase/jsonTable')
+const { loadProductos ,tiendaProductos } = require('../dataBase/productos/jsonTable')
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const controller = {
@@ -16,7 +16,7 @@ const controller = {
 	// Detail - Detail from one product
 	detalle: (req, res) => {
         const productos = loadProductos();
-        const producto = productos.find(producto => producto.id === +req.params.id);
+        const producto = productos.find(product => product.id === +req.params.id);
 
         return res.render('detalle', {
             producto,
@@ -47,7 +47,7 @@ const controller = {
             discount : +discount,
             description,
             category,
-            image
+            image : req.file ? req.file.filename : "default-image.png"
         }
 
         const productosNuevo = [...productos,nuevoProducto];

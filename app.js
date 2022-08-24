@@ -27,9 +27,11 @@ app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la 
 // ************ Route System require and use() ************
 const mainRouter = require('./routes/main'); // Rutas main
 const productosRouter = require('./routes/productos'); // Rutas /products
+const usersRouter = require('./routes/users')
 
 app.use('/', mainRouter);
 app.use('/productos', productosRouter);
+app.use('/users', usersRouter);
 
 
 

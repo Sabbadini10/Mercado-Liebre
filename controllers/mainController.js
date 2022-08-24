@@ -1,4 +1,5 @@
-const { loadProductos, tiendaProductos } = require('../dataBase/jsonTable');
+const { loadProductos } = require('../dataBase/productos/jsonTable');
+const { loadUsers } = require('../dataBase/users/db_usersModule');
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -14,11 +15,20 @@ const controller = {
 		})
 	},
 	productos: (req, res) => {
-		let productos = loadProductos()
+		let productos = loadProductos();
 		const producto = productos.find(product => product.id === +req.params.id);
 		return res.render('productos', {
+				producto,
 				productos,
 				toThousand
+		})
+
+	},
+	users: (req, res) => {
+		let users = loadUsers()
+		const user = users.find(user => user.id === +req.params.id);
+		return res.render('users', {
+				user,
 		})
 
 	},

@@ -11,4 +11,4 @@ const tiendaProductos = (productos) => {
     fs.writeFileSync(path.join(__dirname,'./productos.json'), JSON.stringify(productos, null, 3),'utf8')
 }
 
-module.exports = { loadProductos, tiendaProductos };
+module.exports = { loadProductos, tiendaProductos};
